@@ -1,0 +1,4 @@
+rofi.combi-modi: window,run,ssh
+rofi.font: hack 16
+rofi.modi: combi
+rofi.theme: ~/.config/rofi/themes/Pop-Dark.rasi

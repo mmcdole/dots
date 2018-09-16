@@ -268,9 +268,9 @@ bindsym --release Print exec --no-startup-id maim | xclip -selection clipboard -
 # Screenshot (Selection) -> Clipboard
 bindsym --release Shift+Print exec --no-startup-id maim -s | xclip -selection clipboard -t image/png
 # Screenshot (Screen) -> File
-bindsym --release Ctrl+Print exec --no-startup-id maim ~/Pictures/Shots/$(date +%s).png
+bindsym --release Ctrl+Print exec --no-startup-id maim ~/images/shots/$(date +%s).png
 # Screenshot (Selection) -> File
-bindsym --release Ctrl+Shift+Print exec --no-startup-id maim -s ~/Pictures/Shots/$(date +%s).png
+bindsym --release Ctrl+Shift+Print exec --no-startup-id maim -s ~/images/shots/$(date +%s).png
 
 # Window and Color
 client.focused          #364670 #364670 #93CFBD #364670 #364670
@@ -290,7 +290,7 @@ new_float pixel 2
 
 # Startup Applications
 exec --no-startup-id compton -b
-exec_always feh --bg-scale /home/drake/Pictures/wallpapers/wallpaper.jpg
+exec_always feh --bg-scale $HOME/images/wallpapers/wallpaper.jpg
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 
