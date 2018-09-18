@@ -253,6 +253,7 @@ for_window [window_role="GtkFileChooserDialog"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="Lxappearance"] floating enable
 for_window [class="Gnome-calculator"] floating enable
+for_window [class="Mojosetup"] floating enable
 
 # Window and Color
 client.focused          #364670 #364670 #93CFBD #364670 #364670
@@ -278,6 +279,6 @@ exec_always --no-startup-id dunst
 # remove mouse when unused
 exec_always --no-startup-id unclutter
 # spotify
-exec com.Spotify.client
+exec com.spotify.Client
 # telegram
 exec org.telegram.desktop

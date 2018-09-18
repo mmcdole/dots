@@ -1,0 +1,6 @@
+#!/bin/bash
+
+card=2C:41:A1:C7:98:66
+bluetoothctl power on
+#bluetoothctl disconnect $card
+bluetoothctl connect $card
