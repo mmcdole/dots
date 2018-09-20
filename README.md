@@ -26,4 +26,4 @@ stow i3
 ...
 ```
 
-Each directory that has been stowed has its contents linked to the `$HOME` directory while still being centrally located in my `$HOME/dotfiles` git repo.
+each directory that has been stowed has its contents linked to the `$HOME` directory while still being centrally located in my `$HOME/dotfiles` git repo.
