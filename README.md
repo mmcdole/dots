@@ -26,4 +26,4 @@ stow i3
 ...
 ```
 
-Each item is then automatically linked to the `$HOME` directory while still being centrally located in my `$HOME/dotfiles` git repo.
+Each directory that has been stowed has its contents linked to the `$HOME` directory while still being centrally located in my `$HOME/dotfiles` git repo.
