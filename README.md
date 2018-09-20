@@ -1,5 +1,6 @@
-###config items###
+### config items ###
 
+```
 bin               -> system automation scripts  
 compton     -> minimal composite manager  
 git                -> global git config and aliases  
@@ -10,7 +11,19 @@ vim               -> best text editor
 wallpaper    -> sick wallpapers  
 x11               -> x windows config  
 zsh                -> zshell settings and config  
+```
 
-###install###
+### install ###
 
 the `dots` repo is cloned to `$HOME` and each item is installed using [gnu stow](http://www.gnu.org/software/stow/).  
+
+```bash
+cd ~/dotfiles
+stow bin
+stow compton
+stow git
+stow i3
+...
+```
+
+Each item is then automatically linked to the `$HOME` directory while still being centrally located in my `$HOME/dotfiles` git repo.
