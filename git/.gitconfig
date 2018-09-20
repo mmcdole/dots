@@ -1,3 +1,28 @@
 [user]
-	name = mmcdole
-	email = simucal@gmail.com
+	name = Matthew McDole
+	email = simucal@gmail.com 
+[push]
+	default = current
+[alias]
+        cl = clone
+        ci = commit
+        co = checkout
+        br = for-each-ref --count=30 --sort=-committerdate refs/heads/ --format='%(refname:short)'
+        r = reset
+        sl = stash list
+        sa = stash apply
+        ss = stash save
+        lp = log --pretty=oneline --abbrev-commit
+        cp = cherry-pick
+[merge]
+[diff]
+[difftool]
+	prompt = false
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[credential]
+[tag]
+	sort = version:refname
