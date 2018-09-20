@@ -22,3 +22,5 @@ export PATH="$HOME/bin:$PATH"
 # antibody
 source <(antibody init)
 antibody bundle < ~/.zsh_plugins
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
