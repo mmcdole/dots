@@ -19,6 +19,8 @@ source /usr/share/fzf/completion.zsh && source /usr/share/fzf/key-bindings.zsh
 # custom path
 export PATH="$HOME/bin:$PATH"
 
+export GOPATH="$HOME/go"
+
 # antibody
 source <(antibody init)
 antibody bundle < ~/.zsh_plugins
