@@ -2,6 +2,7 @@
 
 ```
 bin               -> system automation scripts  
+dunst           -> notification daemon
 compton     -> minimal composite manager  
 git                -> global git config and aliases  
 i3                  -> i3 tiling window manager  
