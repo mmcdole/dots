@@ -277,6 +277,8 @@ exec_always feh --bg-scale --randomize $HOME/images/wallpapers/*
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # notifications
 exec_always --no-startup-id dunst
+# auto-mount drives
+exec_always --no-startup-id udiskie
 # remove mouse when unused
 exec_always --no-startup-id unclutter
 # spotify
