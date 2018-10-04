@@ -32,7 +32,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec "rofi -show drun -modi window,drun,run,ssh,combi"
 
 # start rofi clipboard manager
-bindsym $mod+Shift+v exec rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
+bindsym $mod+shift+v exec rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
 
 # start rofi window searcher
 bindsym $mod+Tab exec rofi -show window
