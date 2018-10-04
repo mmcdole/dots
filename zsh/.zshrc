@@ -13,6 +13,10 @@ fi
 # Customize to your needs...
 VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
 
+# aliases
+#alias vksay='ssh -t flix "tail -n0 -f /home/drakenot/viking/tells.log" | espeak > /dev/null 2>&1'
+alias vksay='ssh -t flix "tail -n0 -f /home/drakenot/viking/tells.log" | while read OUTPUT; do notify-send "VikingMUD" "$OUTPUT"; done'
+
 # fzf completion / keybinding
 source /usr/share/fzf/completion.zsh && source /usr/share/fzf/key-bindings.zsh
 

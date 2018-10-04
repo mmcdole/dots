@@ -1,20 +1,19 @@
 #!/bin/bash
 
-rectangles=" "
+echo "running lock from: $1" >> /tmp/lock
 
-SR=$(xrandr --query | grep ' connected' | grep -o '[0-9][0-9]*x[0-9][0-9]*[^ ]*')
-for RES in $SR; do
-  SRA=(${RES//[x+]/ })
-  CX=$((${SRA[2]} + 25))
-  CY=$((${SRA[1]} - 80))
-  rectangles+="rectangle $CX,$CY $((CX+300)),$((CY-80)) "
-done
+# Prevent multiple lock screens
+[[ -z "$(pgrep i3lock)" ]] || exit
 
-TMPBG=/tmp/screen.png
-scrot $TMPBG && convert $TMPBG -scale 5% -scale 2000% -draw "fill black fill-opacity 0.4 $rectangles" $TMPBG
+# Suspend notifications
+killall -SIGUSR1 dunst
 
+echo "no lock found, launching.." >> /tmp/lock
+
+# Lock the screen
 i3lock \
-  -i $TMPBG \
+  --nofork \
+  -i $(find /home/drake/images/wallpapers/lock/ -name "*" | shuf -n1) \
   --timepos="82:h-80" \
   --datepos="tx+24:ty+25" \
   --clock --datestr "Type password to unlock..." \
@@ -25,5 +24,5 @@ i3lock \
   --radius=20 --ring-width=3 --veriftext="" --wrongtext="" \
   --verifcolor="ffffffff" --wrongcolor="ffffffff" --layoutcolor="ffffffff" --timecolor="ffffffff" --datecolor="ffffffff"
 
-rm $TMPBG
-
+# Resume notifications
+killall -SIGUSR2 dunst

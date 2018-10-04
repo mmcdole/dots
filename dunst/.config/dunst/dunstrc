@@ -28,7 +28,7 @@
     show_indicators = yes
     icon_position = left
     max_icon_size = 32
-    icon_path = /usr/share/icons/Paper/16x16/status/:/usr/share/icons/Paper/16x16/devices/:/usr/share/icons/Paper/16x16/apps/
+    icon_path = /usr/share/icons/Paper/32x32/status/:/usr/share/icons/Paper/32x32/devices/:/usr/share/icons/Paper/32x32/apps/
     sticky_history = yes
     history_length = 20
     always_run_script = true
@@ -61,4 +61,4 @@
     foreground = "#f0e0e0"
     frame_color = "#d64e4e"
     timeout = 0
-    icon = /usr/share/icons/Paper/16x16/status/dialog-warning.png
+    icon = /usr/share/icons/Paper/24x24/status/dialog-warning.png
