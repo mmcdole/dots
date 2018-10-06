@@ -1,19 +1,19 @@
 #!/bin/bash
 
-echo "running lock from: $1" >> /tmp/lock
-
 # Prevent multiple lock screens
 [[ -z "$(pgrep i3lock)" ]] || exit
+
+# Pause Spotify
+dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Pause
 
 # Suspend notifications
 killall -SIGUSR1 dunst
 
-echo "no lock found, launching.." >> /tmp/lock
-
 # Lock the screen
 i3lock \
   --nofork \
-  -i $(find /home/drake/images/wallpapers/lock/ -name "*" | shuf -n1) \
+  -i $(find /home/drake/images/wallpapers/lock/ -type f \( -iname \*.jpg -o -iname \*.png \) | shuf -n1) \
+  -i /home/drake/images/wallpapers/lock/wallpaper.jpg \
   --timepos="82:h-80" \
   --datepos="tx+24:ty+25" \
   --clock --datestr "Type password to unlock..." \

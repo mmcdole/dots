@@ -32,7 +32,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec "rofi -show drun -modi window,drun,run,ssh,combi"
 
 # start rofi clipboard manager
-bindsym $mod+shift+v exec rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
+bindsym $mod+shift+v exec "rofi -modi \\"clipboard:greenclip print\\" -show clipboard -run-command '{cmd}'; sleep 0.5; xdotool type $(xclip -o -selection clipboard)"
 
 # start rofi window searcher
 bindsym $mod+Tab exec rofi -show window
@@ -157,7 +157,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 #set $Locker i3lock && sleep 1
-set $Locker sleep 0.1 && $HOME/.config/i3/scripts/lock manual && sleep 1 
+set $Locker sleep 0.1 && $HOME/.config/i3/scripts/lock && sleep 1
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
@@ -282,7 +282,7 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # composite manager
 exec --no-startup-id compton -b
 # auto-lock
-exec --no-startup-id xautolock -time 15 -locker "$HOME/.config/i3/scripts/lock xautolock" -detectsleep -corners -+00 -cornerdelay 1
+exec --no-startup-id xautolock -time 15 -locker "$HOME/.config/i3/scripts/lock" -detectsleep -corners -+00 -cornerdelay 1
 # notifications
 exec --no-startup-id dunst
 # auto-mount drives
