@@ -12,3 +12,6 @@ dbus-update-activation-environment --systemd \
 
 # Launch i3
 exec i3 
+
+# Launch KDE
+#exec startkde
