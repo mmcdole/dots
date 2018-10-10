@@ -113,6 +113,10 @@ set sidescroll=1
 
 " ================ Custom Settings ========================
 color jellybeans
+hi Normal ctermbg=none
+highlight LineNr ctermbg=none
+highlight NonText ctermbg=none
+
 nnoremap <leader>ev :vsplit ~/.vimrc<cr>
 nnoremap <leader>sv :source ~/.vimrc<cr>
 nnoremap <Leader>e :e <C-R>=expand('%:p:h') . '/'<CR>
