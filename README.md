@@ -10,7 +10,9 @@ polybar        -> system bar
 rofi                -> launcher  
 vim               -> best text editor  
 wallpaper    -> sick wallpapers  
-x11               -> x windows config  
+x11               -> x windows config
+ranger         -> file browser
+newsboat    -> rss reader
 zsh                -> zshell settings and config  
 ```
 
