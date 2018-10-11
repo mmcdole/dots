@@ -1,0 +1,57 @@
+TAG,NAME,DESCRIPTION
+P,base-devel,group package with sudo and compilation software
+P,git,version control system
+P,i3-gaps,window manager
+P,xorg-server,graphical server
+P,xorg-xdpyinfo,retrieves screen information
+P,xorg-xinit,starts the graphical server
+G,https://github.com/lukesmithxyz/st.git,Luke's custom build of suckless's terminal emulator
+P,rofi,run & selection menu
+P,ttf-hack,monospace font
+P,noto-fonts,google noto fonts
+P,noto-fonts-emoji,google noto emoji font
+P,ttf-inconsolata,monospace font
+A,ttf-ms-fonts,core ms fonts
+P,ranger,extensive terminal file manager
+P,arandr,UI for screen adjustment
+P,compton,compositor to fix screen tearing and transparency
+P,dosfstools,support DOS filesystems 
+P,exfat-utils,support FAT filesystems 
+P,ntfs-3g,support NTFS filesystems
+P,feh,minimal image viewer
+P,ffmpeg,process video and audio
+P,dunst,suckless notification system
+P,firefox,browser
+P,xclip,manage clipboard
+P,gnupg,open implementation of PGP
+P,pass,password manager
+P,vim,best text editor
+A,i3lock-color-git,lock screen
+P,mpd,lightweight music daemon
+P,mpc,terminal interface for mpd
+P,mpv,video/gif player
+P,ncmpcpp,ncurses interface for music and tag editor
+P,newsboat,terminal RSS client
+P,pulseaudio,audio system
+P,pulseaudio-alsa,audio interface with ALSA
+P,pamixer,terminal audio control interface
+P,pulsemixer,intuitive ncruses audio controller
+A,htop-vim-git,system usage monitor + vim keybindings
+P,scrot,screenshot utility
+A,unclutter-xfixes-git,hides an inactive mouse
+P,unrar,extract rars
+P,unzip,unzip zips
+A,urlview,parses URLs and allows keyboard selection
+P,w3m,terminal browser w/ image viewer
+P,wget,downloads sites and files
+P,xcape,helps create super capslock key
+P,xdotool,window action utility
+P,xautolock,lock screen when idle
+P,youtube-dl,download videos from websites
+P,zathura,pdf viewer with vim bindings
+P,zathura-djvu,gives zathura ability to read djvu files
+P,zathura-pdf-mupdf,gives zathura ability to read pdf and epub files
+P,mediainfo,shows audio and video information (used in ranger)
+P,atool,gives information about archives
+P,fzf,fuzzy finder tool
+A,task-spooler,queues commands or files for download

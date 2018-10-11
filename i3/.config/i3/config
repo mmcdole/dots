@@ -22,11 +22,11 @@ font pango:monospace 8
 floating_modifier $mod
 
 # app shortcuts 
-bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Shift+f exec urxvt -name floating -e ranger
+bindsym $mod+Return exec st
+bindsym $mod+Shift+f exec st -n floating -e ranger
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod++q kill
 
 # start rofi launcher
 bindsym $mod+d exec "rofi -show drun -modi window,drun,run,ssh,combi"
@@ -251,6 +251,7 @@ bindsym --release Ctrl+Shift+Print exec --no-startup-id maim -s ~/images/shots/$
 assign [class="Telegram"] $ws9
 for_window [class="Spotify"] move to workspace $ws10
 for_window [class="URxvt" instance="floating"] floating enable
+for_window [instance="floating"] floating enable
 
 # set specific windows to floating mode
 for_window [window_role="pop-up"] floating enable
