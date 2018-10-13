@@ -21,23 +21,21 @@ font pango:monospace 8
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# app shortcuts 
+# basic app shortcuts 
 bindsym $mod+Return exec st
-bindsym $mod+Shift+f exec st -n floating -e ranger
+bindsym $mod+r exec st -e ranger
+bindsym $mod+Shift+r exec st -e sudo ranger /
+
+# system shortcuts
+bindsym $mod+x exec $HOME/bin/lock
 
 # kill focused window
-bindsym $mod++q kill
+bindsym $mod+q kill
 
-# start rofi launcher
-bindsym $mod+d exec "rofi -show drun -modi window,drun,run,ssh,combi"
-
-# start rofi clipboard manager
+# rofi launcher 
+bindsym $mod+d exec "rofi -show combi -modi window,drun,run,ssh,combi"
 bindsym $mod+shift+v exec "rofi -modi \\"clipboard:greenclip print\\" -show clipboard -run-command '{cmd}'; sleep 0.5; xdotool type $(xclip -o -selection clipboard)"
-
-# start rofi window searcher
 bindsym $mod+Tab exec rofi -show window
-
-# start rofi pass manager
 bindsym $mod+p exec passmenu
 
 # change focus
@@ -90,6 +88,11 @@ bindsym $mod+space focus mode_toggle
 # focus the parent container
 bindsym $mod+a focus parent
 
+# resize bindings
+bindsym $mod+Shift+o    exec --no-startup-id "i3resize right"
+bindsym $mod+Shift+i    exec --no-startup-id "i3resize up"
+bindsym $mod+Shift+y    exec --no-startup-id "i3resize left"
+bindsym $mod+Shift+u    exec --no-startup-id "i3resize down"
 
 # workspace names
 set $ws1 "1"
@@ -127,37 +130,15 @@ bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
-
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
+bindsym $mod+F1 restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
-# resize window (you can also use the mouse for that)
-mode "resize" {
-        bindsym h resize shrink width 10 px or 10 ppt
-        bindsym j resize grow height 10 px or 10 ppt
-        bindsym k resize shrink height 10 px or 10 ppt
-        bindsym l resize grow width 10 px or 10 ppt
-
-        # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
-
-        # back to normal: Enter or Escape or $mod+r
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-        bindsym $mod+r mode "default"
-}
-
-bindsym $mod+r mode "resize"
-
 #set $Locker i3lock && sleep 1
-set $Locker sleep 0.1 && $HOME/.config/i3/scripts/lock && sleep 1
+set $Locker sleep 0.1 && $HOME/bin/lock && sleep 1
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
@@ -263,13 +244,31 @@ for_window [class="Lxappearance"] floating enable
 for_window [class="Gnome-calculator"] floating enable
 for_window [class="Mojosetup"] floating enable
 
-# Window and Color
-client.focused          #364670 #364670 #93CFBD #364670 #364670
-client.focused_inactive #2F2F38 #2F2F38 #CCCCCC #2F2F38 #2F2F38
-client.unfocused        #2F2F38 #2F2F38 #93CFBD #2F2F38 #2F2F38
-client.urgent           #6B3659 #6B3659 #93CFBD #6B3659 #6B3659
-client.placeholder      #666666 #666666 #CCCCCC #666666 #666666
-client.background       #364670
+# Set Xresources colors:
+set_from_resource $darkblack	color0  #000000
+set_from_resource $black	color8  #000000
+set_from_resource $darkred	color1  #000000
+set_from_resource $red		color9  #000000
+set_from_resource $darkgreen	color2  #000000
+set_from_resource $green	color10 #000000
+set_from_resource $darkyellow	color3  #000000
+set_from_resource $yellow	color11 #000000
+set_from_resource $darkblue	color4  #000000
+set_from_resource $blue		color12 #000000
+set_from_resource $darkmagenta	color5  #000000
+set_from_resource $magenta	color13 #000000
+set_from_resource $darkcyan	color6  #000000
+set_from_resource $cyan		color14 #000000
+set_from_resource $darkwhite	color7  #000000
+set_from_resource $white	color15 #000000
+set $transparent		#00000000
+
+#                 BORDER		BACKGROUND	TEXT		INDICATOR   CHILD_BORDER
+client.focused		$red		$red		$magenta	$darkmagenta		$darkblue
+client.unfocused	$transparent	$blue		$white		$darkblue		$darkblack
+client.focused_inactive	$transparent	$blue		$white		$darkblue		$darkblack
+client.urgent		$darkred	$darkred	$black		$darkred		$darkred
+client.background $black
 
 # Borders
 hide_edge_borders smart
@@ -278,12 +277,14 @@ new_float pixel 2
 
 # background image
 exec_always feh --bg-scale --randomize $HOME/images/wallpapers/*
-# polybar
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # composite manager
 exec --no-startup-id compton -b
+# key remapping script
+exec --no-startup-id remaps
+# polybar
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # auto-lock
-exec --no-startup-id xautolock -time 15 -locker "$HOME/.config/i3/scripts/lock" -detectsleep -corners -+00 -cornerdelay 1
+exec --no-startup-id xautolock -time 15 -locker "$HOME/bin/lock" -detectsleep -corners -+00 -cornerdelay 1
 # notifications
 exec --no-startup-id dunst
 # auto-mount drives

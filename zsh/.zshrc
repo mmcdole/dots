@@ -1,32 +1,37 @@
 #
-# Executes commands at the start of an interactive session.
-#
-# Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#  ███████╗███████╗██╗  ██╗██████╗  ██████╗
+#  ╚══███╔╝██╔════╝██║  ██║██╔══██╗██╔════╝
+#    ███╔╝ ███████╗███████║██████╔╝██║
+#   ███╔╝  ╚════██║██╔══██║██╔══██╗██║
+#  ███████╗███████║██║  ██║██║  ██║╚██████╗
+#  ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝
 #
 
+
 # Source Prezto.
-if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+if [[ -f "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Customize to your needs...
-VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
+# Set vi mode
+bindkey -v
 
-# aliases
-#alias vksay='ssh -t flix "tail -n0 -f /home/drakenot/viking/tells.log" | espeak > /dev/null 2>&1'
+# Setup FZF keybindings
+if [[ -f "$HOME/.fzf.zsh" ]]; then
+  source "$HOME/.fzf.zsh"
+fi
+
+# Aliases
+alias sdn="sudo shutdown now"
+alias p="sudo pacman"
+alias SS="sudo systemctl"
+alias v="vim"
+alias sv="sudo vim"
+alias r="ranger"
+alias sr="sudo ranger"
+alias ka="killall"
+alias g="git"
+alias mkd="mkdir -pv"
+
+alias vk="mosh flix tmux a"
 alias vksay='ssh -t flix "tail -n0 -f /home/drakenot/viking/tells.log" | while read OUTPUT; do notify-send "VikingMUD" "$OUTPUT"; echo "$OUTPUT"; done'
-
-# fzf completion / keybinding
-source /usr/share/fzf/completion.zsh && source /usr/share/fzf/key-bindings.zsh
-
-# custom path
-export PATH="$HOME/bin:$PATH"
-
-export GOPATH="$HOME/go"
-
-# antibody
-source <(antibody init)
-antibody bundle < ~/.zsh_plugins
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

@@ -5,7 +5,7 @@ P,i3-gaps,window manager
 P,xorg-server,graphical server
 P,xorg-xdpyinfo,retrieves screen information
 P,xorg-xinit,starts the graphical server
-G,https://github.com/lukesmithxyz/st.git,Luke's custom build of suckless's terminal emulator
+G,https://github.com/mmcdole/st.git,custom build of suckless's terminal emulator
 P,rofi,run & selection menu
 P,ttf-hack,monospace font
 P,noto-fonts,google noto fonts
@@ -19,13 +19,21 @@ P,dosfstools,support DOS filesystems
 P,exfat-utils,support FAT filesystems 
 P,ntfs-3g,support NTFS filesystems
 P,feh,minimal image viewer
+A,polybar-git,status bar
 P,ffmpeg,process video and audio
 P,dunst,suckless notification system
 P,firefox,browser
+A,google-chrome,browser
+A,chromium,browser
+P,qutebrowser,vim browser
 P,xclip,manage clipboard
 P,gnupg,open implementation of PGP
 P,pass,password manager
-P,vim,best text editor
+P,pass-otp,pass otp addon
+P,udisks2,disk daemon
+P,udiskie,auto-mount helper for udisk
+P,stow,linking utility for dotfiles
+P,gvim,best text editor (w/ xorg support)
 A,i3lock-color-git,lock screen
 P,mpd,lightweight music daemon
 P,mpc,terminal interface for mpd

@@ -2,6 +2,6 @@
 
 card=2C:41:A1:C7:98:66
 bluetoothctl power on
-#bluetoothctl disconnect $card
 bluetoothctl connect $card
+#movesinks.sh 
 pacmd set-default-sink bluez_sink.2C_41_A1_C7_98_66.a2dp_sink
