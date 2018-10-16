@@ -13,6 +13,12 @@ if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; t
 fi
 
 export PATH="$HOME/bin:$PATH"
-export EDITOR=vim;
+export EDITOR="vim"
+export VISUAL="$EDITOR"
+export TERMINAL="st"
+export READER="zathura"
+export BROWSER="linkhandler"
+export TRUEBROWSER="google-chrome-stable"
+
 export GOPATH="$HOME/go"
-export FZF_CTRL_T_COMMAND='ag --hidden --ignore .git -l -g ""'
+export FZF_CTRL_T_COMMAND='ag --hidden --ignore .git --ignore .cache -l -g ""'

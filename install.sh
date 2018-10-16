@@ -1,16 +1,16 @@
 if [[ $EUID -ne 0 ]]; then
-  echo "This script must be run as root" 
+  echo "This script must be run as root"
   exit 1
 fi
 
 # Parse Options
-while getopts ":a:p:h" o; do 
+while getopts ":a:p:h" o; do
   case "${o}" in
     h) echo -e -e "Optional arguments for custom use:\\n  -p: Dependencies and programs csv (local file or url)\\n  -a: A helper (must have pacman-like syntax)\\n  -h: Show this message" && exit ;;
     p) progs_file=${OPTARG} ;;
     a) aur_helper=${OPTARG} ;;
     *) echo -e "-$OPTARG is not a valid option." && exit ;;
-  esac 
+  esac
 done
 
 # Defaults
