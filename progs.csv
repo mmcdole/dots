@@ -5,7 +5,7 @@ P,i3-gaps,window manager
 P,xorg-server,graphical server
 P,xorg-xdpyinfo,retrieves screen information
 P,xorg-xinit,starts the graphical server
-G,https://github.com/mmcdole/st.git,custom build of suckless's terminal emulator
+A,xst-git,suckless terminal + patches
 P,rofi,run & selection menu
 P,ttf-hack,monospace font
 P,noto-fonts,google noto fonts
@@ -63,3 +63,4 @@ P,mediainfo,shows audio and video information (used in ranger)
 P,atool,gives information about archives
 P,fzf,fuzzy finder tool
 A,task-spooler,queues commands or files for download
+A,rtv,reddit cli client

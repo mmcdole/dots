@@ -10,32 +10,7 @@ Xft.lcdfilter: lcddefault
 
 #include ".colors/tomorrow-night"
 
-URxvt.font: xft:Hack:size=9
+*.font: Hack:pixelsize=16:antialias=true:autohint=true;
+*.opacity: 240
 
-!URxvt.depth: 24
-URxvt.pointerBlank: true
-URxvt.saveLines:    5000
-URxvt.scrollBar:    false
-URxvt.cursorBlink:  true
-URxvt.urgentOnBell: true
-URxvt*scrollTtyOutput: true
-URxvt*scrollWithBuffer: true
-URxvt*scrollTtyKeypress: true
-
-URxvt.keysym.Shift-Control-V: eval:paste_clipboard
-URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
-URxvt.keysym.Control-Up:\033[1;5A
-URxvt.keysym.Control-Down:\033[1;5B
-URxvt.keysym.Control-Left:\033[1;5D
-URxvt.keysym.Control-Right:\033[1;5C
-
-URxvt*geometry: 76x20
-URxvt.internalBorder: 15
-
-URxvt*transparent:false
-!URxvt*shading: 10
-URxvt*depth: 32
-!URxvt*background: rgba:0000/0000/0200/c800
-URxvt*background: [97]#1E1F29
-
-URxvt.colorUL: #4682B4
+urxvt*font: xft:Hack

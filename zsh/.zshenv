@@ -15,7 +15,7 @@ fi
 export PATH="$HOME/bin:$PATH"
 export EDITOR="vim"
 export VISUAL="$EDITOR"
-export TERMINAL="st"
+export TERMINAL="xst"
 export READER="zathura"
 export BROWSER="linkhandler"
 export TRUEBROWSER="google-chrome-stable"
