@@ -12,7 +12,10 @@ if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; t
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
 
-export PATH="$HOME/bin:$PATH"
+# Read any secret env variables
+source "${ZDOTDIR:-$HOME}/.zsecrets"
+
+export PATH="$HOME/bin:$HOME/.cargo/bin:$PATH"
 export EDITOR="vim"
 export VISUAL="$EDITOR"
 export TERMINAL="xst"

@@ -1,0 +1,48 @@
+#!/bin/bash
+
+if [ ! -f "$1" ]; then
+  echo "The file \"$1\" does not exist!"
+  exit 1
+fi
+
+if [ -z "$2" ]; then
+  echo "No output filename specified!"
+  exit 1
+fi
+
+if [ -z "$AUDIBLE_ACTIVATION_BYTES" ]; then
+  echo "Need AUDIBLE_ACTIVATION_BYTES env var!"
+  exit 1
+fi
+
+tmpdir=$(mktemp -d)
+
+
+# Extract Cover-Art from Book
+
+ffmpeg \
+  -activation_bytes $AUDIBLE_ACTIVATION_BYTES \
+  -i "$1" \
+  -vcodec copy "$tmpdir/cover.jpg"
+
+# Decrypt & Convert to M4B
+
+ffmpeg \
+  -activation_bytes $AUDIBLE_ACTIVATION_BYTES \
+  -i "$1" \
+  -vn \
+  -c:a copy \
+  "$tmpdir/output.m4a"
+
+# Rename from m4a to m4b 
+
+mv "$tmpdir/output.m4a" "$tmpdir/output.m4b"
+
+# Embed Cover-Art
+
+if [ -f "$tmpdir/cover.jpg" ]; then
+  AtomicParsley "$tmpdir/output.m4b" --artwork "$tmpdir/cover.jpg" --overWrite
+fi
+
+mv "$tmpdir/output.m4b" "$2"
+rm -rf "$tmpdir"

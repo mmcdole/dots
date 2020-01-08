@@ -11,6 +11,6 @@ Xft.lcdfilter: lcddefault
 #include ".colors/tomorrow-night"
 
 *.font: Hack:pixelsize=16:antialias=true:autohint=true;
-*.opacity: 240
+*.opacity: 248
 
 urxvt*font: xft:Hack

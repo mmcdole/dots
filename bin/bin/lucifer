@@ -1,0 +1,7 @@
+ssh -i ~/.ssh/drakenot drakenot@flix 'tail -f viking/session.log' |
+while read line ; do
+  if [[ $line == *"LUCIFER ALERT"* ]]; then
+    aplay -q ~/sounds/found.wav 2>&1 1>/dev/null;
+    echo "$(date +'%r') - LUCIFER";
+  fi;
+done;

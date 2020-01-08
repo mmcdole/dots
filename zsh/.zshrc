@@ -47,6 +47,6 @@ alias vk="mosh flix tmux a"
 alias vksay='ssh -t flix "tail -n0 -f /home/drakenot/viking/tells.log" | while read OUTPUT; do notify-send "VikingMUD" "$OUTPUT"; echo "$OUTPUT"; done'
 
 # Flix
-alias mflix="sshfs flix:/mnt/data /mnt/data -o reconnect -o dir_cache=yes -o compression=no
-"
+alias mflix="sshfs flix:/mnt/data /mnt/data -o reconnect -o dir_cache=yes -o compression=no"
+alias mhome="sshfs seed@drakenot.com:/mnt/data /mnt/home -o reconnect -o dir_cache=yes -o compression=no"
 alias uflix="updatedb -l 0 -o ~/.flix.db -U /mnt/data/media"

@@ -24,7 +24,7 @@ margin-bottom = 0
 
 [colors]
 ;loosely based on: https://github.com/chriskempson/tomorrow-theme
-background = #cc1d1f21
+background = #1d1f21
 background-alt = #373b41
 
 foreground = #c5c8c6

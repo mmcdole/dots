@@ -22,12 +22,17 @@ font pango:monospace 8
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+# Set min/max size for floating window
+floating_maximum_size 800 x 800
+floating_minimum_size 75 x 50
+
 # basic app shortcuts 
 bindsym $mod+Return exec $TERM
 bindsym $mod+r exec $TERM -e ranger
 bindsym $mod+Shift+r exec $TERM -e sudo ranger /
 bindsym $mod+w exec $BROWSER 
 bindsym $mod+shift+w exec $BROWSER --incognito
+bindsym $mod+m exec watchvid
 
 # system shortcuts
 bindsym $mod+x exec $HOME/bin/lock

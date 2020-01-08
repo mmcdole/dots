@@ -7,11 +7,14 @@ P,xorg-xdpyinfo,retrieves screen information
 P,xorg-xinit,starts the graphical server
 A,xst-git,suckless terminal + patches
 P,rofi,run & selection menu
+A,rofi-pass,bash script to handle pass / rofi integration
 P,ttf-hack,monospace font
-P,noto-fonts,google noto fonts
-P,noto-fonts-emoji,google noto emoji font
 P,ttf-inconsolata,monospace font
 A,ttf-ms-fonts,core ms fonts
+P,ttf-dejavu,font family based on the Bitstream Vera Fonts with a wider range of characters
+A,ttf-devicons,iconic font for developers
+P,noto-fonts,google noto fonts
+P,noto-fonts-emoji,google noto emoji font
 P,ranger,extensive terminal file manager
 P,arandr,UI for screen adjustment
 P,compton,compositor to fix screen tearing and transparency
@@ -64,3 +67,15 @@ P,atool,gives information about archives
 P,fzf,fuzzy finder tool
 A,task-spooler,queues commands or files for download
 A,rtv,reddit cli client
+P,neofetch,config terminal info
+P,cmatrix,fun matrix cli app
+P,asciiquarium,fun aquarium cli app
+A,browserpass,native host app for the Browserpass extension
+A,browserpass-chrome,browser extension for Pass password manager
+P,fwupd,A simple daemon enable firmware updates
+P,ghidra,Software reverse engineering framework
+P,gimp,GNU Image Maniuplation Program
+P,lftp,Sophisticated command line based FTP client
+P,mosh,Mobile shell that survives disconnects
+P,sshfs,FUSE client based on SSH
+P,the_silver_searcher,faster Ack
