@@ -5,77 +5,99 @@ P,i3-gaps,window manager
 P,xorg-server,graphical server
 P,xorg-xdpyinfo,retrieves screen information
 P,xorg-xinit,starts the graphical server
-A,xst-git,suckless terminal + patches
-P,rofi,run & selection menu
-A,rofi-pass,bash script to handle pass / rofi integration
-P,ttf-hack,monospace font
-P,ttf-inconsolata,monospace font
-A,ttf-ms-fonts,core ms fonts
-P,ttf-dejavu,font family based on the Bitstream Vera Fonts with a wider range of characters
-A,ttf-devicons,iconic font for developers
-P,noto-fonts,google noto fonts
-P,noto-fonts-emoji,google noto emoji font
-P,ranger,extensive terminal file manager
+P,docker,lightweight containers
+P,cryptsetup,userspace setup tool for dm-crypt
+P,cmatrix,curses scrolling matrix
+P,calibre,ebook management
+P,wpa_supplicant,utility providing key negotiation for WPA wireless networks
+P,bzip2,data compression
 P,arandr,UI for screen adjustment
+P,alsa-utils,alsa sound support
+P,asciiquarium,fun aquarium cli app
+P,atool,gives information about archives
+P,bluez-utils,bluetooth support
+P,browserpass,native host app for the Browserpass extension
+P,cmatrix,fun matrix cli app
 P,compton,compositor to fix screen tearing and transparency
 P,dosfstools,support DOS filesystems 
-P,exfat-utils,support FAT filesystems 
-P,ntfs-3g,support NTFS filesystems
-P,feh,minimal image viewer
-A,polybar-git,status bar
-P,ffmpeg,process video and audio
 P,dunst,suckless notification system
+P,exfat-utils,support FAT filesystems 
+P,feh,minimal ima viewer
+P,ffmpeg,process video and audio
 P,firefox,browser
-A,google-chrome,browser
-A,chromium,browser
-P,qutebrowser,vim browser
-P,xclip,manage clipboard
+P,fwupd,A simple daemon enable firmware updates
+P,fzf,fuzzy finder tool
+P,ghidra,Software reverse engineering framework
+P,gimp,GNU Image Maniuplation Program
 P,gnupg,open implementation of PGP
-P,pass,password manager
-P,pass-otp,pass otp addon
-P,udisks2,disk daemon
-P,udiskie,auto-mount helper for udisk
-P,stow,linking utility for dotfiles
 P,gvim,best text editor (w/ xorg support)
-A,i3lock-color-git,lock screen
-P,mpd,lightweight music daemon
+P,lftp,Sophisticated command line based FTP client
+P,mediainfo,shows audio and video information (used in ranger)
+P,mosh,Mobile shell that survives disconnects
+P,thunar,xfce file manager
 P,mpc,terminal interface for mpd
+P,mpd,lightweight music daemon
 P,mpv,video/gif player
 P,ncmpcpp,ncurses interface for music and tag editor
+P,neofetch,config terminal info
 P,newsboat,terminal RSS client
+P,noto-fonts,google noto fonts
+P,noto-fonts-emoji,google noto emoji font
+P,ntfs-3g,support NTFS filesystems
+P,pamixer,terminal audio control interface
+P,pass,password manager
+P,pass-otp,pass otp addon
 P,pulseaudio,audio system
 P,pulseaudio-alsa,audio interface with ALSA
-P,pamixer,terminal audio control interface
 P,pulsemixer,intuitive ncruses audio controller
-A,htop-vim-git,system usage monitor + vim keybindings
+P,qutebrowser,vim browser
+P,ranger,extensive terminal file manager
+P,rofi,run & selection menu
 P,scrot,screenshot utility
-A,unclutter-xfixes-git,hides an inactive mouse
+P,sshfs,FUSE client based on SSH
+P,stow,linking utility for dotfiles
+P,the_silver_searcher,faster Ack
+P,ttf-dejavu,font family based on the Bitstream Vera Fonts with a wider range of characters
+P,ttf-hack,monospace font
+P,ttf-inconsolata,monospace font
+P,udiskie,auto-mount helper for udisk
+P,udisks2,disk daemon
 P,unrar,extract rars
 P,unzip,unzip zips
-A,urlview,parses URLs and allows keyboard selection
 P,w3m,terminal browser w/ image viewer
 P,wget,downloads sites and files
-P,xcape,helps create super capslock key
-P,xdotool,window action utility
 P,xautolock,lock screen when idle
+P,xcape,helps create super capslock key
+P,xclip,manage clipboard
+P,xdotool,window action utility
 P,youtube-dl,download videos from websites
 P,zathura,pdf viewer with vim bindings
 P,zathura-djvu,gives zathura ability to read djvu files
 P,zathura-pdf-mupdf,gives zathura ability to read pdf and epub files
-P,mediainfo,shows audio and video information (used in ranger)
-P,atool,gives information about archives
-P,fzf,fuzzy finder tool
-A,task-spooler,queues commands or files for download
+A,arc-gtk-theme-git,flat gtk theme
+A,browserpass-chrome,browser extension for 'pass' password manager
+A,chromium,browser
+A,ffsend-bin,cli to firefox send service
+A,ghidra-bin,software reverse engineering framework
+A,google-chrome,browser
+A,htop-vim-git,system usage monitor + vim keybindings
+A,i3lock-color-git,lock screen
+A,netctl-auto-resume,systemd service to reconnect to wifi after sleep
+A,paper-icon-theme-git,gtk icon theme
+A,parsec-bin,remote client for gaming
+A,polybar-git,status bar
+A,realvnc-vnc-viewer,vnc remote desktop client software
+A,rofi-pass,bash script to handle pass / rofi integration
 A,rtv,reddit cli client
-P,neofetch,config terminal info
-P,cmatrix,fun matrix cli app
-P,asciiquarium,fun aquarium cli app
-A,browserpass,native host app for the Browserpass extension
-A,browserpass-chrome,browser extension for Pass password manager
-P,fwupd,A simple daemon enable firmware updates
-P,ghidra,Software reverse engineering framework
-P,gimp,GNU Image Maniuplation Program
-P,lftp,Sophisticated command line based FTP client
-P,mosh,Mobile shell that survives disconnects
-P,sshfs,FUSE client based on SSH
-P,the_silver_searcher,faster Ack
+A,task-spooler,queues commands or files for download
+A,ttf-devicons,iconic font for developers
+A,ttf-font-awesome,iconic font for bootstrap
+A,ttf-font-awesome-4,free version of font awesome
+A,ttf-material-design-icons-git,google material design icons
+A,ttf-ms-fonts,core ms fonts
+A,ttf-symbola,font for unicode symbols
+A,unclutter-xfixes-git,hides an inactive mouse
+A,urlview,parses URLs and allows keyboard selection
+A,vimix-gtk-themes-git,Vimix is a flat Material Design theme for GTK 
+A,xst-git,suckless terminal + patches
+A,yay,pacman wrapper and AUR helper written in go
