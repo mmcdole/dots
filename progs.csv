@@ -1,19 +1,26 @@
 TAG,NAME,DESCRIPTION
 P,base-devel,group package with sudo and compilation software
 P,git,version control system
+P,zsh,the better shell
 P,i3-gaps,window manager
 P,xorg-server,graphical server
 P,xorg-xdpyinfo,retrieves screen information
 P,xorg-xinit,starts the graphical server
+P,flatpak,application containers
 P,docker,lightweight containers
 P,cryptsetup,userspace setup tool for dm-crypt
 P,cmatrix,curses scrolling matrix
 P,calibre,ebook management
 P,wpa_supplicant,utility providing key negotiation for WPA wireless networks
 P,bzip2,data compression
+P,man,manual pages
+P,tldr,shorter manual pages
 P,arandr,UI for screen adjustment
 P,alsa-utils,alsa sound support
 P,asciiquarium,fun aquarium cli app
+P,wireguard-tools,wireguard utils
+P,wireguard-arch,wireguard kernel module
+P,veracrypt,encryption suite
 P,atool,gives information about archives
 P,bluez-utils,bluetooth support
 P,browserpass,native host app for the Browserpass extension
@@ -74,6 +81,7 @@ P,youtube-dl,download videos from websites
 P,zathura,pdf viewer with vim bindings
 P,zathura-djvu,gives zathura ability to read djvu files
 P,zathura-pdf-mupdf,gives zathura ability to read pdf and epub files
+A,antibody,zsh plugin manager
 A,arc-gtk-theme-git,flat gtk theme
 A,browserpass-chrome,browser extension for 'pass' password manager
 A,chromium,browser
@@ -100,4 +108,7 @@ A,unclutter-xfixes-git,hides an inactive mouse
 A,urlview,parses URLs and allows keyboard selection
 A,vimix-gtk-themes-git,Vimix is a flat Material Design theme for GTK 
 A,xst-git,suckless terminal + patches
-A,yay,pacman wrapper and AUR helper written in go
+F,org.telegram.desktop,telegram chat app
+F,com.spotify.Client,spotify music client
+F,com.calibre_ebook.calibre, calibre ebook manager
+

@@ -1,0 +1,20 @@
+configuration {
+  modi: "combi,drun,run,window";
+  lines: 10;
+  show-icons: true;
+  terminal: "xst";
+  run-shell-command: "{terminal} --window -- bash";
+  drun-icon-theme: "Papirus-Dark";
+  combi-modi: "window,drun,run";
+  hide-scrollbar: true;
+  window-format: "{t}";
+  theme: "themes/ayu-dark.rasi";
+  combi-hide-mode-prefix: false;
+  display-window: "Win";
+  display-windowcd: "Windows";
+  display-run: "Commands";
+  display-ssh: "SSH";
+  display-drun: "Apps";
+  display-combi: "All";
+  display-keys: "Keys";
+}

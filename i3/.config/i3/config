@@ -41,10 +41,10 @@ bindsym $mod+x exec $HOME/bin/lock
 bindsym $mod+q kill
 
 # rofi launcher 
-bindsym $mod+d exec "rofi -show combi -modi window,drun,run,ssh,combi"
+bindsym $mod+d exec "rofi -combi-modi window,drun,run,ssh -show combi"
 bindsym $mod+shift+v exec "rofi -modi \\"clipboard:greenclip print\\" -show clipboard -run-command '{cmd}'; sleep 0.5; xdotool type $(xclip -o -selection clipboard)"
 bindsym $mod+Tab exec rofi -show window
-bindsym $mod+p exec passmenu
+bindsym $mod+p exec rofi-pass
 
 # change focus
 bindsym $mod+h focus left
@@ -271,9 +271,9 @@ set_from_resource $white	color15 #000000
 set $transparent		#00000000
 
 
-#                 BORDER		BACKGROUND	TEXT		INDICATOR   CHILD_BORDER
-client.focused		$transparent		"#364670"  $white	$darkmagenta		$darkblue
-client.unfocused	$transparent	"#444444"		$darkwhite $darkblue		$darkblack
+#                 	BORDER		BACKGROUND	TEXT		INDICATOR   		CHILD_BORDER
+client.focused		"#ffcc66"	"#364670"  	$white		$darkmagenta		"#ffcc66"
+client.unfocused	$transparent	"#444444"	$darkwhite 	$darkblue		$darkblack
 client.focused_inactive	$transparent	$blue		$white		$darkblue		$darkblack
 client.urgent		$darkred	$darkred	$black		$darkred		$darkred
 client.background $black
@@ -300,6 +300,6 @@ exec --no-startup-id udiskie
 # remove mouse when unused
 exec --no-startup-id unclutter
 # spotify
-exec com.spotify.Client
+exec flatpak run com.spotify.Client
 # telegram
-exec org.telegram.desktop
+exec flatpak run org.telegram.desktop

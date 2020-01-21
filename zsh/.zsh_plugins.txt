@@ -1,0 +1,16 @@
+# zsh mkdir && cd plugin
+caarlos0/zsh-mkc
+
+jreese/zsh-titles
+
+# theme
+agkozak/agkozak-zsh-prompt
+
+# additional completion definitions for zsh
+zsh-users/zsh-completions
+
+# fish shell-like syntax highlighting for zsh
+zsh-users/zsh-syntax-highlighting
+
+# fish like autosuggestions for zsh
+zsh-users/zsh-autosuggestions

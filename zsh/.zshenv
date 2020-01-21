@@ -16,7 +16,7 @@ fi
 source "${ZDOTDIR:-$HOME}/.zsecrets"
 
 export PATH="$HOME/bin:$HOME/.cargo/bin:$PATH"
-export EDITOR="vim"
+export EDITOR="nvim"
 export VISUAL="$EDITOR"
 export TERMINAL="xst"
 export READER="zathura"

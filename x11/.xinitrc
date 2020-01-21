@@ -7,5 +7,8 @@ systemctl --user import-environment DISPLAY XAUTHORITY
 dbus-update-activation-environment --systemd \
   DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
 
+# Setup default terminal
+export TERMINAL="xst"
+
 # Launch i3
 exec i3
