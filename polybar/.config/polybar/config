@@ -65,7 +65,7 @@ dpi = ${xrdb:Xft.dpi:-1}
 ;modules
 modules-left = i3
 modules-center = xwindow
-modules-right = xbacklight pulseaudio xkeyboard wlan vpn battery date powermenu
+modules-right = xbacklight pulseaudio xkeyboard vpn wlan battery date powermenu
 
 ;tray
 tray-position = right
@@ -298,11 +298,9 @@ format-disconnected =
 
 [module/vpn]
 type = custom/script
-exec = echo VPN
-exec-if = pgrep -x openvpn
+exec = ~/.config/polybar/scripts/wg-check.sh
 interval = 5
-format-prefix = " "
-format-underline = ${colors.aqua}
+click-left = ~/.config/polybar/scripts/wg-check.sh --toggle &
 
 [module/date]
 type = internal/date
