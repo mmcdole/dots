@@ -12,7 +12,7 @@ killall -SIGUSR1 dunst
 # Lock the screen
 i3lock \
   --nofork \
-  -i $(find /home/drake/images/wallpapers/lock/ -type f \( -iname \*.jpg -o -iname \*.png \) | shuf -n1) \
+  -i $(find /home/drake/images/lock/ -type f \( -iname \*.jpg -o -iname \*.png \) | shuf -n1) \
   --timepos="82:h-80" \
   --datepos="tx+24:ty+25" \
   --clock --datestr "Type password to unlock..." \

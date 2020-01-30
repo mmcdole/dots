@@ -21,7 +21,7 @@ export VISUAL="$EDITOR"
 export TERMINAL="xst"
 export READER="zathura"
 export BROWSER="linkhandler"
-export TRUEBROWSER="google-chrome-stable"
+export TRUEBROWSER="brave"
 
 export GOPATH="$HOME/go"
 export FZF_CTRL_T_COMMAND='ag --hidden --ignore .git --ignore .cache -l -g ""'

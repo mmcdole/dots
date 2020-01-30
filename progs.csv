@@ -10,7 +10,6 @@ P,flatpak,application containers
 P,docker,lightweight containers
 P,cryptsetup,userspace setup tool for dm-crypt
 P,cmatrix,curses scrolling matrix
-P,calibre,ebook management
 P,wpa_supplicant,utility providing key negotiation for WPA wireless networks
 P,bzip2,data compression
 P,man,manual pages
@@ -82,9 +81,9 @@ P,zathura,pdf viewer with vim bindings
 P,zathura-djvu,gives zathura ability to read djvu files
 P,zathura-pdf-mupdf,gives zathura ability to read pdf and epub files
 A,antibody,zsh plugin manager
-A,arc-gtk-theme-git,flat gtk theme
 A,browserpass-chrome,browser extension for 'pass' password manager
 A,chromium,browser
+A,brave-bin,browser
 A,ffsend-bin,cli to firefox send service
 A,ghidra-bin,software reverse engineering framework
 A,google-chrome,browser
@@ -103,7 +102,6 @@ A,ttf-font-awesome,iconic font for bootstrap
 A,ttf-font-awesome-4,free version of font awesome
 A,ttf-material-design-icons-git,google material design icons
 A,ttf-ms-fonts,core ms fonts
-A,ttf-symbola,font for unicode symbols
 A,unclutter-xfixes-git,hides an inactive mouse
 A,urlview,parses URLs and allows keyboard selection
 A,vimix-gtk-themes-git,Vimix is a flat Material Design theme for GTK 
