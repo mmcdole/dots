@@ -75,9 +75,16 @@ alias yta="yt -x -f bestaudio/best" # Download only audio
 
 # Mud
 alias vk="mosh flix tmux a"
-alias vksay='ssh -t flix "tail -n0 -f /home/drakenot/viking/tells.log" | while read OUTPUT; do notify-send "VikingMUD" "$OUTPUT"; echo "$OUTPUT"; done'
+alias vksay='mosh flix "tail -f /home/drakenot/viking/tells.log"'
 
 # Flix
 alias mflix="sshfs flix:/mnt/data /mnt/data -o reconnect -o dir_cache=yes -o compression=no"
 alias mhome="sshfs seed@drakenot.com:/mnt/data /mnt/home -o reconnect -o dir_cache=yes -o compression=no"
-alias uflix="updatedb -l 0 -o ~/.flix.db -U /mnt/data/media"
+alias uflix="ssh -t flix \"updatedb -l 0 -o /mnt/data/media/.flix.db -U /mnt/data/media\" >/dev/null 2>&1;cp /mnt/data/media/.flix.db ~/.flix.db"
+
+vg() {
+  local file
+  file="$(mloc | fzf)"
+
+  cd "$file"
+}

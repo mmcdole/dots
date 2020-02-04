@@ -1,6 +1,5 @@
 #!/bin/sh
 
-localdb="/var/lib/mlocate/mlocate.db"
 flixdb="$HOME/.flix.db"
 
-locate -d $localdb:$flixdb home /mnt/data
+locate -d $flixdb home /mnt/data

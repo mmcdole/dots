@@ -14,6 +14,7 @@ P,wpa_supplicant,utility providing key negotiation for WPA wireless networks
 P,bzip2,data compression
 P,man,manual pages
 P,tldr,shorter manual pages
+P,maim,screenshotting tool
 P,arandr,UI for screen adjustment
 P,alsa-utils,alsa sound support
 P,asciiquarium,fun aquarium cli app
