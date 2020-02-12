@@ -30,7 +30,7 @@ let mapleader=","
 " =============== vim-plug Initialization ===============
 " This loads all the plugins specified below
 
-call plug#begin('~/.vim/plugged')
+call plug#begin()
 Plug 'haya14busa/incsearch.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-surround'
