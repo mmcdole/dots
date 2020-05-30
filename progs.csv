@@ -25,7 +25,7 @@ P,atool,gives information about archives
 P,bluez-utils,bluetooth support
 P,browserpass,native host app for the Browserpass extension
 P,cmatrix,fun matrix cli app
-P,compton,compositor to fix screen tearing and transparency
+P,picom,compositor to fix screen tearing and transparency
 P,dosfstools,support DOS filesystems 
 P,dunst,suckless notification system
 P,exfat-utils,support FAT filesystems 
@@ -37,7 +37,8 @@ P,fzf,fuzzy finder tool
 P,ghidra,Software reverse engineering framework
 P,gimp,GNU Image Maniuplation Program
 P,gnupg,open implementation of PGP
-P,gvim,best text editor (w/ xorg support)
+P,neovim,best text editor 
+P,python-pynvim,python client for neovim
 P,lftp,Sophisticated command line based FTP client
 P,mediainfo,shows audio and video information (used in ranger)
 P,mosh,Mobile shell that survives disconnects
@@ -86,7 +87,6 @@ A,browserpass-chrome,browser extension for 'pass' password manager
 A,chromium,browser
 A,brave-bin,browser
 A,ffsend-bin,cli to firefox send service
-A,ghidra-bin,software reverse engineering framework
 A,google-chrome,browser
 A,htop-vim-git,system usage monitor + vim keybindings
 A,i3lock-color-git,lock screen
@@ -110,4 +110,3 @@ A,xst-git,suckless terminal + patches
 F,org.telegram.desktop,telegram chat app
 F,com.spotify.Client,spotify music client
 F,com.calibre_ebook.calibre, calibre ebook manager
-

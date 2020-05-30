@@ -287,7 +287,7 @@ new_float pixel 2
 # background image
 exec_always feh --bg-scale --randomize $HOME/images/wallpapers/*
 # composite manager
-exec --no-startup-id compton -b
+exec --no-startup-id picom -b
 # key remapping script
 exec --no-startup-id remaps
 # polybar

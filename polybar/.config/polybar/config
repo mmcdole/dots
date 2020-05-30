@@ -150,7 +150,7 @@ label-empty-padding = 2
 ;pin-workspaces = true
 ;ws-icon-0 = 1;%{T5}%{T-}
 ws-icon-0 = 1;%{T3}%{T-}
-ws-icon-1 = 2;%{T4}%{T-}
+ws-icon-1 = 2;2
 ws-icon-2 = 3;3
 ws-icon-3 = 4;4
 ws-icon-4 = 5;5
@@ -158,7 +158,7 @@ ws-icon-5 = 6;6
 ws-icon-6 = 7;7
 ws-icon-7 = 8;8
 ws-icon-8 = 9;9
-ws-icon-9 = 10;%{T4}%{T-}
+ws-icon-9 = 10;%{T2}%{T-}
 ;ws-icon-default = 
 
 type = internal/i3
@@ -323,9 +323,9 @@ format-volume = <ramp-volume> <bar-volume>
 label-volume = VOL
 label-volume-foreground = ${root.foreground}
 
-ramp-volume-0 = %{T2}%{T-}
-ramp-volume-1 = %{T2}%{T-} 
-ramp-volume-2 = %{T2}%{T-}
+ramp-volume-0 = %{T2}%{T-}
+ramp-volume-1 = %{T2}%{T-} 
+ramp-volume-2 = %{T2}%{T-}
 
 ramp-headphones-0 = 
 ramp-headphones-1 = 
@@ -357,12 +357,12 @@ bar-muted-foreground-0 = #ff0000
 type = internal/pulseaudio
 format-volume = <ramp-volume> <label-volume>
 
-label-muted = %{T4}%{T-} muted
+label-muted = %{T4}󰖁%{T-} muted
 label-muted-foreground = #666866
 
-ramp-volume-0 = %{T4}%{T-}
-ramp-volume-1 = %{T4}%{T-}
-ramp-volume-2 = %{T4}%{T-}
+ramp-volume-0 = %{T4}󰕿%{T-}
+ramp-volume-1 = %{T4}󰖀%{T-}
+ramp-volume-2 = %{T4}󰕾%{T-}
 
 [module/battery]
 type = internal/battery
@@ -376,20 +376,26 @@ format-discharging = <ramp-capacity> <label-discharging>
 ;format-full-prefix = %{T4}%{T-}
 ;format-full-prefix-foreground = ${colors.blue}
 
-ramp-capacity-0 = %{T4}%{T-}
-ramp-capacity-1 = %{T4}%{T-} 
-ramp-capacity-2 = %{T4}%{T-} 
-ramp-capacity-3 = %{T4}%{T-} 
-ramp-capacity-4 = %{T4}%{T-} 
-ramp-capacity-5 = %{T4}%{T-} 
-ramp-capacity-6 = %{T4}%{T-} 
-ramp-capacity-7 = %{T4}%{T-} 
-ramp-capacity-8 = %{T4}%{T-} 
-ramp-capacity-9 = %{T4}%{T-}
+ramp-capacity-0 = %{T4}󰂎%{T-}
+ramp-capacity-1 = %{T4}󰁺%{T-} 
+ramp-capacity-2 = %{T4}󰁻%{T-} 
+ramp-capacity-3 = %{T4}󰁼%{T-} 
+ramp-capacity-4 = %{T4}󰁽%{T-} 
+ramp-capacity-5 = %{T4}󰁾%{T-} 
+ramp-capacity-6 = %{T4}󰁿%{T-} 
+ramp-capacity-7 = %{T4}󰂀%{T-} 
+ramp-capacity-8 = %{T4}󰂁%{T-} 
+ramp-capacity-9 = %{T4}󰂂%{T-}
+ramp-capacity-10 = %{T4}󰂂%{T-}
+ramp-capacity-11 = %{T4}󰁹%{T-}
 
-animation-charging-0 = %{T4}%{T-}
-animation-charging-1 = %{T4}%{T-}
-animation-charging-2 = %{T4}%{T-}
+animation-charging-0 = %{T4}󰂆%{T-}
+animation-charging-1 = %{T4}󰂇%{T-}
+animation-charging-2 = %{T4}󰂈%{T-}
+animation-charging-3 = %{T4}󰂉%{T-}
+animation-charging-4 = %{T4}󰂊%{T-}
+animation-charging-5 = %{T4}󰂋%{T-}
+animation-charging-6 = %{T4}󰂅%{T-}
 animation-charging-foreground = ${colors.primary}
 animation-charging-framerate = 750
 
@@ -419,9 +425,9 @@ expand-right = true
 
 format-spacing = 1
 
-label-open = %{T4}%{T-}
+label-open = %{T4}󰺕%{T-}
 label-open-foreground = ${colors.alert}
-label-close = %{T4}%{T-} cancel
+label-close = %{T4}󰺖%{T-} cancel
 label-close-foreground = ${colors.alert}
 label-separator = |
 label-separator-foreground = ${colors.foreground-alt}

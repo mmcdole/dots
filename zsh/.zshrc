@@ -88,3 +88,5 @@ vg() {
 
   cd "$file"
 }
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

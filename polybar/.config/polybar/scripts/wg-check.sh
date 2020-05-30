@@ -27,11 +27,11 @@ case "$1" in
     ;;
 *)
     if [ "$(connection_status)" = "1" ]; then
-        echo "#1 $config_name"
+        echo "%{T4}󰦝%{T-} $config_name"
     elif [ "$(connection_status)" = "3" ]; then
         echo "#3 Config not found!"
     else
-        echo "#2 down"
+        echo "%{T4}󰦞%{T-} vpn"
     fi
     ;;
 esac
