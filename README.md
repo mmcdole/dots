@@ -3,7 +3,7 @@
 | dir  | description |
 | ------------- | ------------- |
 | bin | system automation scripts  |
-| compton | minimal composite manager  |
+| picom | minimal composite manager  |
 | dunst | notification daemon|
 | git | global git config and aliases  |
 | i3 | i3 tiling window manager  |
@@ -23,7 +23,7 @@ the `dots` repo is cloned to `$HOME` and each item is installed using [gnu stow]
 ```bash
 cd ~/dotfiles
 stow bin
-stow compton
+stow picom
 stow git
 stow i3
 ...
