@@ -12,18 +12,18 @@ shadow = true;
 
 # The blur radius for shadows, in pixels. (defaults to 12)
 # shadow-radius = 12
-shadow-radius = 10;
+shadow-radius = 7;
 
 # The opacity of shadows. (0.0 - 1.0, defaults to 0.75)
 # shadow-opacity = .75
 
 # The left offset for shadows, in pixels. (defaults to -15)
 # shadow-offset-x = -15
-shadow-offset-x = -5;
+shadow-offset-x = -7;
 
 # The top offset for shadows, in pixels. (defaults to -15)
 # shadow-offset-y = -15
-shadow-offset-y = -5;
+shadow-offset-y = -7;
 
 # Avoid drawing shadows on dock/panel windows. This option is deprecated,
 # you should use the *wintypes* option in your config file instead.
@@ -62,16 +62,11 @@ shadow-offset-y = -5;
 #
 # shadow-exclude = []
 shadow-exclude = [
-  # disable shadows on notifications
   "name = 'Notification'",
-  # disable shadows on hidden windows
-  "_GTK_FRAME_EXTENTS@:c",
-  "_NET_WM_STATE@:32a *= '_NET_WM_STATE_HIDDEN'",
-  # disable shadows on i3 frames
-  "class_g ?= 'i3-frame'",
-  # disable shadows on sticky
-  "_NET_WM_STATE@:32a *= '_NET_WM_STATE_STICKY'",
-  "!I3_FLOATING_WINDOW@:c"
+  "class_g = 'Conky'",
+  "class_g ?= 'Notify-osd'",
+  "class_g = 'Cairo-clock'",
+  "_GTK_FRAME_EXTENTS@:c"
 ];
 
 # Specify a X geometry that describes the region in which shadow should not
@@ -97,11 +92,11 @@ fading = true
 
 # Opacity change between steps while fading in. (0.01 - 1.0, defaults to 0.028)
 # fade-in-step = 0.028
-fade-in-step = 0.05;
+fade-in-step = 0.03;
 
 # Opacity change between steps while fading out. (0.01 - 1.0, defaults to 0.03)
 # fade-out-step = 0.03
-fade-out-step = 0.05;
+fade-out-step = 0.03;
 
 # The time between steps in fade step, in milliseconds. (> 0, defaults to 10)
 # fade-delta = 10
@@ -123,7 +118,7 @@ fade-out-step = 0.05;
 
 # Opacity of inactive windows. (0.1 - 1.0, defaults to 1.0)
 # inactive-opacity = 1
-inactive-opacity = 0.98;
+inactive-opacity = 0.8;
 
 # Opacity of window titlebars and borders. (0.1 - 1.0, disabled by default)
 # frame-opacity = 1.0
@@ -215,7 +210,7 @@ blur-background-exclude = [
 # `xrender` is the default one.
 #
 # backend = 'glx'
-backend = "glx";
+backend = "xrender";
 
 # Enable/disable VSync.
 # vsync = false

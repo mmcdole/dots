@@ -98,6 +98,7 @@ A,realvnc-vnc-viewer,vnc remote desktop client software
 A,rofi-pass,bash script to handle pass / rofi integration
 A,rtv,reddit cli client
 A,task-spooler,queues commands or files for download
+A,neovim-symlinks,replace vim with nvim
 A,ttf-devicons,iconic font for developers
 A,ttf-font-awesome,iconic font for bootstrap
 A,ttf-font-awesome-4,free version of font awesome
