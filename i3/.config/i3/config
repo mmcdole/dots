@@ -42,9 +42,9 @@ bindsym $mod+q kill
 
 # rofi launcher 
 bindsym $mod+d exec "rofi -combi-modi window,drun,run,ssh -show combi"
-bindsym $mod+shift+v exec "rofi -modi \\"clipboard:greenclip print\\" -show clipboard -run-command '{cmd}'; sleep 0.5; xdotool type $(xclip -o -selection clipboard)"
 bindsym $mod+Tab exec rofi -show window
 bindsym $mod+p exec rofi-pass
+bindsym $mod+Shift+v exec "mloc | rofi -i -sort -sorting-method fzf -matching fuzzy -threads 0 -dmenu"
 
 # change focus
 bindsym $mod+h focus left

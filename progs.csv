@@ -8,24 +8,17 @@ P,xorg-xdpyinfo,retrieves screen information
 P,xorg-xinit,starts the graphical server
 P,flatpak,application containers
 P,docker,lightweight containers
-P,cryptsetup,userspace setup tool for dm-crypt
-P,cmatrix,curses scrolling matrix
-P,wpa_supplicant,utility providing key negotiation for WPA wireless networks
-P,bzip2,data compression
-P,man,manual pages
-P,tldr,shorter manual pages
-P,maim,screenshotting tool
-P,arandr,UI for screen adjustment
 P,alsa-utils,alsa sound support
+P,arandr,UI for screen adjustment
 P,asciiquarium,fun aquarium cli app
-P,wireguard-tools,wireguard utils
-P,wireguard-arch,wireguard kernel module
-P,veracrypt,encryption suite
 P,atool,gives information about archives
+P,bluez,bluetooth support
 P,bluez-utils,bluetooth support
 P,browserpass,native host app for the Browserpass extension
+P,bzip2,data compression
+P,cmatrix,curses scrolling matrix
 P,cmatrix,fun matrix cli app
-P,picom,compositor to fix screen tearing and transparency
+P,cryptsetup,userspace setup tool for dm-crypt
 P,dosfstools,support DOS filesystems 
 P,dunst,suckless notification system
 P,exfat-utils,support FAT filesystems 
@@ -37,17 +30,18 @@ P,fzf,fuzzy finder tool
 P,ghidra,Software reverse engineering framework
 P,gimp,GNU Image Maniuplation Program
 P,gnupg,open implementation of PGP
-P,neovim,best text editor 
-P,python-pynvim,python client for neovim
 P,lftp,Sophisticated command line based FTP client
+P,maim,screenshotting tool
+P,man,manual pages
 P,mediainfo,shows audio and video information (used in ranger)
+P,mlocate,filesystem index
 P,mosh,Mobile shell that survives disconnects
-P,thunar,xfce file manager
 P,mpc,terminal interface for mpd
 P,mpd,lightweight music daemon
 P,mpv,video/gif player
 P,ncmpcpp,ncurses interface for music and tag editor
 P,neofetch,config terminal info
+P,neovim,best text editor 
 P,newsboat,terminal RSS client
 P,noto-fonts,google noto fonts
 P,noto-fonts-emoji,google noto emoji font
@@ -55,9 +49,13 @@ P,ntfs-3g,support NTFS filesystems
 P,pamixer,terminal audio control interface
 P,pass,password manager
 P,pass-otp,pass otp addon
+P,pavucontrol,pulse audio control panel
+P,picom,compositor to fix screen tearing and transparency
 P,pulseaudio,audio system
 P,pulseaudio-alsa,audio interface with ALSA
+P,pulseaudio-bluetooth,bluetooth output support
 P,pulsemixer,intuitive ncruses audio controller
+P,python-pynvim,python client for neovim
 P,qutebrowser,vim browser
 P,ranger,extensive terminal file manager
 P,rofi,run & selection menu
@@ -65,6 +63,8 @@ P,scrot,screenshot utility
 P,sshfs,FUSE client based on SSH
 P,stow,linking utility for dotfiles
 P,the_silver_searcher,faster Ack
+P,thunar,xfce file manager
+P,tldr,shorter manual pages
 P,ttf-dejavu,font family based on the Bitstream Vera Fonts with a wider range of characters
 P,ttf-hack,monospace font
 P,ttf-inconsolata,monospace font
@@ -72,8 +72,12 @@ P,udiskie,auto-mount helper for udisk
 P,udisks2,disk daemon
 P,unrar,extract rars
 P,unzip,unzip zips
+P,veracrypt,encryption suite
 P,w3m,terminal browser w/ image viewer
 P,wget,downloads sites and files
+P,wireguard-arch,wireguard kernel module
+P,wireguard-tools,wireguard utils
+P,wpa_supplicant,utility providing key negotiation for WPA wireless networks
 P,xautolock,lock screen when idle
 P,xcape,helps create super capslock key
 P,xclip,manage clipboard

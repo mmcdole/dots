@@ -89,4 +89,12 @@ vg() {
   cd "$file"
 }
 
+vg2() {
+  cd "$(mloc | fzf)"
+}
+
+
+zle -N vg vg2
+bindkey "^V" vg
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
