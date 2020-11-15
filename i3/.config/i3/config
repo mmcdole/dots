@@ -293,7 +293,7 @@ exec --no-startup-id remaps
 # polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # auto-lock
-exec --no-startup-id xautolock -time 15 -locker "$HOME/bin/lock" -detectsleep -corners -+00 -cornerdelay 1
+exec --no-startup-id xautolock -time 15 -locker "$HOME/bin/lock" -detectsleep 
 # notifications
 exec --no-startup-id dunst
 # auto-mount drives
