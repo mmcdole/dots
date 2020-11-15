@@ -50,6 +50,7 @@ P,pamixer,terminal audio control interface
 P,pass,password manager
 P,pass-otp,pass otp addon
 P,pavucontrol,pulse audio control panel
+P,playerctl,send dbus media commands
 P,picom,compositor to fix screen tearing and transparency
 P,pulseaudio,audio system
 P,pulseaudio-alsa,audio interface with ALSA
