@@ -3,6 +3,7 @@
 | dir  | description |
 | ------------- | ------------- |
 | bin | system automation scripts  |
+| ncspot | cli spotify client | 
 | picom | minimal composite manager  |
 | dunst | notification daemon|
 | git | global git config and aliases  |
