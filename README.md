@@ -3,12 +3,12 @@
 | dir  | description |
 | ------------- | ------------- |
 | bin | system automation scripts  |
-| ncspot | cli spotify client | 
-| picom | minimal composite manager  |
 | dunst | notification daemon|
 | git | global git config and aliases  |
 | i3 | i3 tiling window manager  |
+| ncspot | cli spotify client | 
 | newsboat | rss reader|
+| picom | minimal composite manager  |
 | polybar | system bar  |
 | ranger | file browser|
 | rofi | launcher  |
