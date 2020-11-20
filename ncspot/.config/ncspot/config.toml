@@ -4,7 +4,7 @@
 "<" = ""
 ">" = ""
 "A" = ""
-"Backspace" = ""
+"Backspace" = "Back"
 "Ctrl+a" = ""
 "Ctrl+e" = ""
 "Ctrl+n" = ""
@@ -43,7 +43,7 @@
 "Shift+h" = "seek -10000"
 "Shift+j" = "voldown"
 "Shift+k" = "volup"
-"Shift+l" = "seek 10000"
+"Shift+l" = "seek +10000"
 
 "n" = "next"
 "Shift+n" = "previous"
