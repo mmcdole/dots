@@ -1,9 +1,5 @@
 # Homebrew packages for macOS
 
-# Taps
-tap "homebrew/cask"
-tap "homebrew/cask-fonts"
-
 # Core utilities
 brew "stow"
 brew "git"
@@ -36,7 +32,7 @@ brew "btop"
 cask "visual-studio-code"
 cask "obsidian"
 
-# Fonts
+# Fonts (from homebrew/cask)
 cask "font-jetbrains-mono-nerd-font"
 cask "font-fira-code-nerd-font"
 cask "font-hack-nerd-font"

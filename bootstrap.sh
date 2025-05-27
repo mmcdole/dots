@@ -47,8 +47,8 @@ case "${DISTRO}" in
         echo "📦 Updating package lists..."
         sudo apt update
         
-        echo "📦 Installing stow..."
-        sudo apt install -y stow
+        echo "📦 Installing git and stow..."
+        sudo apt install -y git stow
         ;;
         
     "macos")
@@ -61,8 +61,8 @@ case "${DISTRO}" in
             eval "$(/opt/homebrew/bin/brew shellenv)"
         fi
         
-        echo "📦 Installing stow..."
-        brew install stow
+        echo "📦 Installing git and stow..."
+        brew install git stow
         ;;
         
     *)

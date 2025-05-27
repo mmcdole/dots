@@ -52,6 +52,18 @@ case "${DISTRO}" in
         
     "macos")
         echo "📦 Installing Homebrew packages..."
+        
+        # Ensure Homebrew is installed
+        if ! command -v brew &> /dev/null; then
+            echo "⚠️  Homebrew not found. Please install it first:"
+            echo "   /bin/bash -c \"\$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\""
+            exit 1
+        fi
+        
+        # Update Homebrew first
+        echo "  Updating Homebrew..."
+        brew update
+        
         if [ -f "${DOTFILES_DIR}/packages/Brewfile" ]; then
             brew bundle --file="${DOTFILES_DIR}/packages/Brewfile"
         fi
@@ -77,23 +89,20 @@ fi
 
 echo "🔗 Setting up dotfiles with stow..."
 
-# Create necessary directories
-mkdir -p ~/.config
+# Remove any existing symlinks that might conflict
+[ -L ~/.config/nvim ] && rm ~/.config/nvim
 
 # Stow dotfiles
 cd "${DOTFILES_DIR}/config"
 
-# For now, just stow nvim (we'll add more as we organize the structure)
-if [ -d "nvim" ]; then
-    echo "  Stowing: nvim"
-    stow -R nvim -t ~
-fi
-
-# Future structure will be:
-# for dir in */; do
-#     echo "  Stowing: ${dir%/}"
-#     stow -R "${dir%/}" -t ~
-# done
+# Stow all config directories
+for dir in */; do
+    dir="${dir%/}"
+    if [ -d "$dir" ]; then
+        echo "  Stowing: $dir"
+        stow -R "$dir" -t ~
+    fi
+done
 
 echo "✅ Installation complete!"
 echo ""
