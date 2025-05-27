@@ -1,0 +1,34 @@
+# Core utilities
+stow
+git
+neovim
+tmux
+zsh
+ripgrep
+fzf
+fd
+bat
+eza
+tree
+
+# Development tools
+nodejs
+npm
+python
+python-pip
+go
+rust
+docker
+docker-compose
+
+# CLI tools
+jq
+yq
+httpie
+github-cli
+btop
+
+# Fonts
+ttf-jetbrains-mono-nerd
+ttf-firacode-nerd
+ttf-hack-nerd

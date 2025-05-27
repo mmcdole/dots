@@ -1,0 +1,2 @@
+# Global npm packages
+@anthropic-ai/claude-code

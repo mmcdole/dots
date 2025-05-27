@@ -1,0 +1,7 @@
+# AUR packages requiring paru/yay
+
+# Development tools
+visual-studio-code-bin
+
+# Apps
+obsidian
