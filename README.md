@@ -5,8 +5,6 @@ Personal configuration files managed with [GNU Stow](https://www.gnu.org/softwar
 ## Quick Start
 
 ```bash
-git clone https://github.com/USERNAME/dots.git ~/Documents/code/dots
-cd ~/Documents/code/dots
 ./bootstrap.sh  # Install dependencies (Git, Stow, Homebrew on macOS)
 ./install.sh    # Install packages and symlink configs
 ```
