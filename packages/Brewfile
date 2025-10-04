@@ -31,6 +31,7 @@ brew "btop"
 # Casks (GUI apps)
 cask "visual-studio-code"
 cask "obsidian"
+cask "ghostty"
 
 # Fonts (from homebrew/cask)
 cask "font-jetbrains-mono-nerd-font"

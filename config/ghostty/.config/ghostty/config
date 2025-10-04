@@ -1,0 +1,7 @@
+# Ghostty Configuration
+
+# Custom app icon - Catppuccin Mocha theme
+# Icon file is at ~/.config/ghostty/Ghostty.icns
+macos-icon = custom
+
+# Add any other Ghostty configurations below

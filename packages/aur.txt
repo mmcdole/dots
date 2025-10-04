@@ -5,3 +5,4 @@ visual-studio-code-bin
 
 # Apps
 obsidian
+ghostty
